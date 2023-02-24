@@ -1,2 +1,2 @@
 # GeradordeSenhas
-Gerados de Senhas. Teste de alguns comandos e funções em HTML, CSS e JavaScript.
+Gerador de Senhas. Testes de alguns comandos e funções em HTML, CSS e JavaScript.
