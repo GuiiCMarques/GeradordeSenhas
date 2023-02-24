@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <script type="text/javascript">
+    function gerarSenha() {
+      const cidades = ["Albania", "Austria", "Belgica", "Bulgaria", "Croacia", "Dinamarca", "Eslovaquia", "Eslovenia", "Espanha", "Finlandia", "Franca", "Grecia", "Holanda", "Irlanda", "Islandia", "Italia", "Liechtenstein", "Macedonia", "Malta", "Noruega", "Portugal", "ReinoUnido", "Romenia", "Suica", "Suecia", "Turquia", "Ucrania", "Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Equador", "Guiana", "GuianaFrancesa", "Paraguai", "Peru", "Suriname", "Uruguai", "Venezuela", "Belize", "CostaRica", "ElSalvador", "Guatemala", "Honduras", "Nicaragua", "Panama", "Canada", "EstadosUnidos", "Mexico", "Angola", "Argelia", "Benim", "Botsuana", "BurquinaFaso", "Burundi", "CaboVerde", "Camaroes", "Chade", "Comores", "Congo", "CostaDoMarfim", "Egito", "Eritreia", "Etiopia", "Gabao", "Gambia", "Gana", "Guine", "GuineBissau", "GuineEquatorial", "IlhasComores", "Jibuti", "Lesoto", "Liberia", "Libia", "Madagascar", "Malawi", "Mali", "Marrocos", "Mauritania", "Mauricio", "Mocambique", "Namibia", "Niger", "Nigeria", "Quenia", "RepublicaCentroAfricana", "RepublicaDoCongo", "Ruanda", "SaaraOcidental", "Senegal", "SerraLeoa", "Somalia", "Sudao", "Suazilandia", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabue", "Afegaoistao", "ArabiaSaudita", "Armenia", "Azerbaijao", "Bahrain", "Bangladesh", "Butao", "Camboja", "Catar", "China", "Chipre", "CoreiaDoNorte", "CoreiaDoSul", "EmiradosArabesUnidos", "Filipinas", "Georgia", "HongKong", "India", "Indonesia", "Iraque", "Israel", "Japao", "Jordania", "Kirguistao", "Kuwait", "Laos", "Libano", "Malasia", "Maldivas", "Mongolia", "Myanmar", "Nepal", "Oman", "Paquistao", "Quirguistao", "Singapura", "Siria", "SriLanka", "Taiwan", "Tajiquistao", "Tailandia", "TimorLeste", "Turcomenistao", "Turquia", "Uzbequistao", "Vietna", "Australia", "Fiji", "IlhasMarshall", "IlhasSalomao", "Kiribati", "Nauru", "NovaZelandia", "Palau", "PapuaNovaGuine", "Samoa", "Tonga", "Tuvalu", "Vanuatu", "Amsterdam", "Athens", "Auckland", "Bangkok", "Barcelona", "Beijing", "Beirut", "Belfast", "Berlin", "Bogota", "Bologna", "Bordeaux", "Brasilia", "Bratislava", "Bruges", "Brussels", "Bucharest", "Budapest", "BuenosAires", "Cairo", "Calgary", "Cancun", "CapeTown", "Caracas", "Casablanca", "Chengdu", "ChiangMai", "Chongqing", "Christchurch", "Colombo", "Copenhagen", "Cork", "Cusco", "Dalian", "DarEsSalaam", "Delhi", "Dubai", "Dublin", "Durban", "Edinburgh", "Florence", "Frankfurt", "Geneva", "Glasgow", "Goa", "Guangzhou", "Hamburg", "Hanoi", "Helsinki", "HoChiMinhCity", "HongKong", "Istanbul", "Jaipur", "Jakarta", "Jerusalem", "Johannesburg", "Kathmandu", "Kiev", "Krakow", "KualaLumpur", "Kunming", "LaPaz", "Lagos", "Lima", "Lisbon", "Ljubljana", "Lyon", "Madrid", "Malaga", "Mallorca", "Manila", "Marseille", "Medellin", "Melbourne", "MexicoCity", "Milan", "Montevideo", "Montreal", "Moscow", "Mumbai", "Munich", "Nairobi", "Naples", "NewDelhi", "Nice", "Nicosia", "Osaka", "Oslo", "Oxford", "Palermo", "Paris", "Perth", "PhnomPenh", "Prague", "PuertoVallarta", "Pune", "QuebecCity", "QueensTown", "Reykjavik", "Riga", "RioDeJaneiro", "Rome", "SaintPetersburg", "Salzburg", "SanJuan", "Santiago", "Santorini", "SaoPaulo", "Seoul", "Shanghai", "Shenzhen", "SiemReap", "Singapore", "Split", "Stockholm", "Sydney", "Taipei", "Tallinn", "Tbilisi", "TelAviv", "Thessaloniki", "Toronto", "Valencia", "Venice", "Vienna", "Vilnius", "Warsaw", "Wellington", "Zagreb", "Zurich", "Adelaide", "Albuquerque", "Alexandria", "Amman", "Ankara", "Antalya", "Antigua", "Arequipa", "Asuncion", "Astrakhan", "Aswan", "Aurangabad", "Austin", "Avignon", "Baku", "Balikpapan", "Baltimore", "Bandung", "Banff", "Banjul", "Bari", "Barranquilla", "Basel", "Batam", "Bath", "Belfast", "Belgrade", "Bergen", "Berne", "Bishkek", "Bodrum", "Bologna", "Bordeaux", "Bremen", "Brisbane", "Bristol", "Brno", "Broome", "Bruges", "Bucharest", "Budva", "Bursa", "Cagliari", "Calgary", "Canberra", "Cannes", "CapeTown", "Cartagena", "Cebu", "Changchun", "Changsha", "Charleston", "Charlotte", "Chennai", "Chisinau", "Chongqing", "Cologne", "Columbus", "Cordoba", "Cozumel", "Curitiba", "Daegu", "Dakar", "Dallas", "Dammam", "Davao", "Denpasar", "Detroit", "Dijon", "Doha", "Dresden", "Dublin", "Dusseldorf", "Eindhoven", "ElPaso", "Entebbe", "Fes", "Fiji", "Fortaleza", "FozdoIguacu", "Fukuoka", "Galway", "Gdansk", "Gdynia", "Geelong", "Gibraltar", "GoldCoast", "Granada", "Graz", "Guayaquil", "Halifax", "Halmstad", "Hangzhou", "Hannover", "Havana", "Hefei", "Helsingborg", "Hobart", "HoiAn", "Houston", "Innsbruck", "Irkutsk", "Isfahan", "Izmir", "Jacksonville", "Jaipur", "Jeddah", "Jeju", "JohorBahru", "Jujuy", "Kaliningrad", "Kampala", "Kazan", "Kiev", "Kochi", "Kolkata", "Kosice", "Krasnodar", "Krasnoyarsk", "Kuching", "Kumamoto", "Kunming", "LaPaz", "Langkawi", "Larnaca", "LasPalmas", "Leeds", "Leipzig", "Lille", "Lima", "Linz", "Lodz", "Lombok", "LosCabos"];
+      console.log("-=-=-=-=-= GERADOR DE SENHAS =-=-=-=-=-");
+      const cidade = cidades[Math.floor(Math.random() * cidades.length)].replace(/ /g, "");
+      const caractere = ["!", "@", "#", "%", "$"][Math.floor(Math.random() * 5)];
+      let digitos = "";
+      for (let i = 0; i < 4; i++) {
+        digitos += Math.floor(Math.random() * 10);
+      }
+      let senha = cidade[0].toUpperCase() + cidade.slice(1) + caractere + digitos;
+      while (senha.length < 12) {
+        senha += Math.floor(Math.random() * 10);
+      }
+      console.log(senha);
+      document.getElementById("senha").innerHTML = senha;
+    }
+  </script>
+</head>
+<body>
+  <ul class="menu">
+    <li>
+      <a href="index.html">Início</a>
+    </li>
+    <li>
+      <a href="animes.html">Animes / Quadrinhos</a>
+    </li>
+    <li>
+      <a href="games.html">Games</a>
+    </li>
+    <li>
+      <a href="numeros.html">Numerais</a>
+    </li>
+    <li>
+      <a href="palavras.html">Palavras</a>
+    </li>
+    <li>
+      <a href="series.html">Filmes / Series</a>
+    </li>
+    <li class="right">
+      <a href="contato.html">Contato</a>
+    </li>
+  </ul>
+  <br>
+
+  <header>
+    <h1>Gerador de Senhas</h1>
+    <h2>Países e Cidades</h2>
+    <p>Gerando senhas com prefixo de cidades ou países, seguido por um caractere especial e números. Mínimo de 12 caracteres.</p>
+    <button onclick="gerarSenha()">Gerar Senha</button>
+    <div id="senha"></div>
+  </header>
+
+
+  <footer>
+    <p><img src="imagens/Cavlogosmall.png" alt="logotipo"></p>
+    <p>Desenvolvido por <i>Cavalaro Technology&copy;</i></p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+        function gerarSenha() {
+          const palavras = ["Altruismo", "Amizade", "Amplitude", "Aprendizado", "Assertividade", "Atencao", "Atitude", "Autocontrole", "Autoestima", "Autonomia", "Avanco", "Aventura", "Beleza", "Bondade", "Bravura", "Caminho", "Capacidade", "Compaixao", "Comprometimento", "Confianca", "Conhecimento", "Conquista", "Coragem", "Crescimento", "Cuidado", "Decisao", "Determinacao", "Disciplina", "Diversao", "Educacao", "Eficiencia", "Empatia", "Empreendedorismo", "Encorajamento", "Energia", "Entusiasmo", "Escolha", "Espiritualidade", "Estrategia", "Excelencia", "Experiencia", "Familia", "Fe", "Felicidade", "Flexibilidade", "Foco", "Forca", "Generosidade", "Gentileza", "Gratidao", "Habilidade", "Harmonia", "Honestidade", "Honra", "Humildade", "Idealismo", "Iluminacao", "Imaginacao", "Impacto", "Independencia", "Inovacao", "Inspiracao", "Integridade", "Inteligencia", "Intuicao", "Inventividade", "Justica", "Liberdade", "Lideranca", "Ligacao", "Limites", "Maturidade", "Motivacao", "Necessidade", "Oportunidade", "Otimismo", "Paciencia", "Paz", "Perdao", "Perfeicao", "Persistencia", "Planejamento", "Positividade", "Poder", "Pratica", "Prestacao", "Produtividade", "Prosperidade", "Qualidade", "Realizacao", "Reciprocidade", "Recomeco", "Reconhecimento", "Reflexao", "Relacionamento", "Resiliencia", "Respeito", "Responsabilidade", "Resultados", "Riqueza", "Sabedoria", "Seguranca", "Simplicidade", "Sinceridade", "Solidariedade", "Superacao", "Talento", "Tranquilidade", "Transformacao", "Transparencia", "Uniao", "Valentia", "Verdade", "Vitoria", "Voluntariado", "Zelo", "Acao", "Adaptabilidade", "Agilidade", "Ambicao", "Amor", "Antecipacao", "Arte", "Atividade", "Autoconfianca", "Autodisciplina", "Bem-estar", "Capricho", "Carisma", "Celebracao", "Certeza", "Charme", "Civismo", "Coerencia", "Coletividade", "Colaboracao", "Comunicacao", "Consciencia", "Controle", "Conviccao", "Coragemousadia", "Cordialidade", "Criatividade", "Criticidade", "Cuidadosidade", "Cultura", "Curiosidade", "Deleite", "Desapego", "Desempenho", "Desenvolvimento", "Desprendimento", "Destreza", "Dinamismo", "Direcao", "Discernimento", "Disposicao", "Diversidade", "Doacao", "Dose", "Eficacia", "Elegancia", "Eloquencia", "Empenhamento", "Empolgacao", "Empowerment", "Envolvimento", "Equilibrio", "Estrutura", "Euforismo", "Euforia", "Exatidao", "Excelencia", "Expectativa", "Exuberancia", "Fascinacao", "Firmeza", "Flexivel", "Fluidez", "Foco", "Formalidade", "Fraternidade", "Ganho", "Gerenciamento", "Graciosidade", "Gratificacao", "Habilidade", "Harmonia", "Heroismo", "Humanismo", "Idealismo", "Identidade", "Idoneidade", "Imagem", "Imersao", "Imparcialidade", "Impetuosidade", "Impulsionamento", "Incentivacao", "Inclusao", "Independencia", "Individualidade", "Influencia", "Ingenuidade", "Inocencia", "Inovacao", "Inquisicao", "Insight", "Insinuacao", "Inspetor", "Inspire", "Instigacao", "Intensidade", "Interacao", "Introducao", "Invencao", "Investigacao", "Irradiacao", "Justica", "Liberdade", "Lideranca", "Lideranca", "Limpeza", "Longanimidade", "Lucidez", "Luminosidade", "Majestade", "Mandato", "Maestria", "Magia", "Magnetismo", "Malicia", "Manutencao", "Meditacao", "Melhoria", "Memoria", "Mente", "Meticulosidade", "Metodologia", "Militancia", "Mira", "Missionario", "Modelagem", "Moralidade", "Motivacao", "Multiplicidade", "Musculatura", "Mutabilidade", "Necessidade", "Nivelamento", "Nobreza", "Obediencia", "Obliquidade", "Observacao", "Oportunidade", "Ordem", "Organizacao", "Originalidade", "Otimismo", "Paixao", "Parceria", "Paz", "Perfeccionismo", "Performance", "Permanencia", "Perseveranca", "Perspectiva", "Planejamento", "Pleasure", "Poder", "Positivismo", "Potencial", "Prazer", "Preparo", "Presenca", "Preservacao", "Previsao", "Produtividade", "Profissionalismo", "Protagonismo", "Pulcritude", "Punctualidade", "Pureza", "Qualidade", "Quantidade", "Quebra", "Questao", "Quietude", "Quintessencia", "Rapidez", "Realizacao", "Realismo", "Receptividade", "Reconhecimento", "Recrutamento", "Reducao", "Reflexao", "Reflexividade", "Regeneracao", "Relacao", "Relaxamento", "Renovacao", "Reparticao", "Reputacao", "Resiliencia", "Respeito", "Responsabilidade", "Restauracao", "Resultados", "Reuniao", "Revelacao", "Reverencia", "Revolucao", "Rigor", "Robustez", "Rotina", "Sabedoria", "Satisfacao", "Seguranca", "Senso", "Serenidade", "Servico", "Simplicidade", "Sinceridade", "Singularidade", "Sistema", "Sociabilidade", "Solucao", "Sons", "Sossego", "Soviete", "Sujeicao", "Supera", "Supervisao", "Supremacia", "Sustentabilidade", "Sutileza", "Synchronism", "Tarefa", "Temperanca", "Tenacidade", "Terminacao", "Terminologia", "Testemunho", "Textura", "Tolerancia", "Tomada", "Tolerancia", "Totalidade", "Trabalho", "Tradicao", "Transcendencia", "Transformacao", "Transicao", "Transparencia", "Tranquilidade", "Tratamento", "Triunfo", "Unidade", "Uniao", "Unicidade", "Universalidade", "Utilidade", "Valentia", "Variedade", "Veemencia", "Veracidade", "Verdade", "Vigor", "Virtuosismo", "Visao", "Visibilidade", "Vitalidade", "Vitoria", "Vivacidade", "Volicao", "Voluntariedade", "Vontade", "Workaholic"]
+          console.log("-=-=-=-=-= GERADOR DE SENHAS =-=-=-=-=-");
+          const palavra = palavras[Math.floor(Math.random() * palavras.length)].replace(/ /g, "");
+          const caractere = ["!", "@", "#", "%", "$"][Math.floor(Math.random() * 5)];
+          let digitos = "";
+          for (let i = 0; i < 4; i++) {
+            digitos += Math.floor(Math.random() * 10);
+          }
+          let senha = palavra[0].toUpperCase() + palavra.slice(1) + caractere + digitos;
+          while (senha.length < 12) {
+            senha += Math.floor(Math.random() * 10);
+          }
+          console.log(senha);
+          document.getElementById("senha").innerHTML = senha;
+        }
+      </script>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="index.html">Início</a>
+        </li>
+        <li>
+            <a href="animes.html">Animes / Quadrinhos</a>
+        </li>
+        <li>
+            <a href="games.html">Games</a>
+        </li>
+        <li>
+            <a href="numeros.html">Numerais</a>
+        </li>
+        <li>
+            <a href="paisesecidades.html">Países / Cidades</a>
+        </li>
+        <li>
+            <a href="series.html">Filmes / Series</a>
+        </li>
+        <li class="right">
+            <a href="contato.html">Contato</a>
+        </li>
+    </ul>
+    <br>
+
+    <header>
+        <h1>Gerador de Senhas</h1>
+        <h2>Palavras</h2>
+        <p>Gerando senhas com prefixo de palavras diversas, seguido por um caractere especial e números. Mínimo de 12 caracteres.</p>
+        <button onclick="gerarSenha()">Gerar Senha</button>
+        <div id="senha"></div>
+    </header>
+
+
+    <footer>
+        <p><img src="imagens/Cavlogosmall.png" alt="logotipo"></p>
+        <p>Desenvolvido por <i>Cavalaro Technology&copy;</i></p>
+    </footer>
+
+</body>
+
+</html>

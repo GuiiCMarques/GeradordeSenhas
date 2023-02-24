@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <script type="text/javascript">
+    function gerarSenha() {
+      const animes = ["OnePiece", "DragonBall", "DeathNote", "Naruto", "Fullmetal", "Alchemist", "OnePunchMan", "Berserk", "YuYuHakusho", "Pokemon", "Digimon", "TinyToons", "BusterBunny", "Pernalonga", "PluckyDuck", "Hamtaro", "Patolino", "Papaleguas", "MickeyMouse", "PatoDonald", "ScoobyDoo", "Spiderman", "Ironman", "Superman", "Supergirl", "MissMarvel", "ScarletWitch", "Android18", "Android17", "Beerus", "Bojack", "Broly", "Cell", "Frieza", "Gohan", "Goku", "GokuBlack", "Gotenks", "Hit", "Krillin", "MajinBoo", "Nappa", "Piccolo", "Raditz", "Trunks", "Vegeta", "Videl", "Whis", "Zamasu", "Zarbon", "Akamaru", "Anko", "Choji", "Danzo", "Deidara", "Gaara", "Hinata", "Iruka", "Jiraya", "Kakashi", "Killerbee", "Kiba", "Konohamaru", "Kushina", "MightGuy", "Minato", "Naruto", "Obito", "Sakura", "Sasuke", "Shikamaru", "Tenten", "Temari", "Tsunade", "Yamato", "Zabuza", "Akuma", "Blanka", "Cammy", "ChunLi", "Dhalsim", "E.Honda", "Guile", "Ken", "M.Bison", "Rashid", "Ryu", "Sagat", "Vega", "Zangief", "BlackPanther", "CaptainAmerica", "Daredevil", "Deadpool", "DoctorStrange", "Gamora", "Groot", "Hawkeye", "Hulk", "IronMan", "Loki", "RocketRacoon", "SpiderMan", "StarLord", "Thor", "Wolverine", "Abomination", "DoctorDoom", "GreenGoblin", "Juggernaut", "Kingpin", "Magneto", "Mystique", "RedSkull", "Rhino", "Sandman", "Thanos", "Ultron", "Venom", "Whiplash", "WinterSoldier", "Bane", "Brainiac", "Catwoman", "Darkseid", "Deathstroke", "Doomsday", "HarleyQuinn", "Joker", "LexLuthor", "Sinestro", "SolomonGrundy", "TwoFace", "VandalSavage", "Vixen", "TheRiddler", "Aquaman", "Batman", "Batgirl", "Catwoman", "Cyborg", "Flash", "GreenArrow", "GreenLantern", "HarleyQuinn", "AttackOnTitan", "MyHeroAcademia", "SailorMoon", "CowboyBebop", "GhostInTheShell", "Bleach", "FairyTail", "SwordArtOnline", "CodeGeass", "NanatsuNoTaizai", "HunterXHunter", "Haikyu", "JojoAdventure", "DemonSlayer", "Inuyasha", "YuGiOh", "Voltron", "LegendOfKorra", "SamuraiJack", "JohnnyBravo", "PowerpuffGirls", "DexterLaboratory", "CourageTheDog", "TeenTitans", "GeneratorRex", "DannyPhantom", "KimPossible", "AmericanDragon", "FairlyOddParents", "JimmyNeutron", "SpongeBob", "RockosModernLife", "RenAndStimpy", "HeyArnold", "Rugrats", "CatDog", "RealMonsters", "DannyPhantom", "KimPossible", "JohnnyTest", "PhineasAndFerb", "GravityFalls", "AdventureTime", "RegularShow", "StevenUniverse", "WeBareBears", "TheSimpsons", "FamilyGuy", "SouthPark", "RickAndMorty", "BobBurgers", "Archer", "BojackHorseman", "BigMouth", "KingOfTheHill", "TheBoondocks", "BatmanBeyond", "JusticeLeague", "StaticShock", "LegionHeroes", "SuperFriends", "TheBatman", "NinjaTurtles", "TheAvengers", "TheFantasticFour", "SilverSurfer", "Hawkgirl", "JohnConstantine", "MartianManhunter", "Nightwing", "Shazam", "Supergirl", "Superman", "WonderWoman"]
+      console.log("-=-=-=-=-= GERADOR DE SENHAS =-=-=-=-=-");
+      const anime = animes[Math.floor(Math.random() * animes.length)].replace(/ /g, "");
+      const caractere = ["!", "@", "#", "%", "$"][Math.floor(Math.random() * 5)];
+      let digitos = "";
+      for (let i = 0; i < 4; i++) {
+        digitos += Math.floor(Math.random() * 10);
+      }
+      let senha = anime[0].toUpperCase() + anime.slice(1) + caractere + digitos;
+      while (senha.length < 12) {
+        senha += Math.floor(Math.random() * 10);
+      }
+      console.log(senha);
+      document.getElementById("senha").innerHTML = senha;
+    }
+  </script>
+</head>
+<body>
+  <ul class="menu">
+    <li>
+        <a href="index.html">Início</a>
+    </li>
+    <li>
+      <a href="games.html">Games</a>
+    </li>
+    <li>
+        <a href="numeros.html">Numerais</a>
+    </li>
+    <li>
+        <a href="paisesecidades.html">Países / Cidades</a>
+    </li>
+    <li>
+      <a href="palavras.html">Palavras</a>
+    </li>
+    <li>
+      <a href="series.html">Filmes / Series</a>
+    </li>
+    <li class="right">
+      <a href="contato.html">Contato</a>
+    </li>
+  </ul>
+  <br>
+
+  <header>
+    <h1>Gerador de Senhas</h1>
+    <h2>Animes / Quadrinhos</h2>
+    <p>Gerando senhas com prefixo de Animes, seguido por um caractere especial e números. Mínimo de 12 caracteres.</p>
+    <button onclick="gerarSenha()">Gerar Senha</button>
+    <div id="senha"></div>
+  </header>
+
+
+  <footer>
+    <p><img src="imagens/Cavlogosmall.png" alt="logotipo"></p>
+    <p>Desenvolvido por <i>Cavalaro Technology&copy;</i></p>
+  </footer>
+  
+</body>
+
+</html>

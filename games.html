@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+        function gerarSenha() {
+          const games = ["GrandTheftAuto", "GodOfWar", "Forza", "StreetFighter", "Kombat", "CarlJohnson", "TommyVercetti", "NicoBelic", "CesarVialpando", "Ryder", "BigSmoke", "FrankTempeny", "EddiePulaski", "Woozie", "SuperMario", "PokemonBlue", "PokemonRed", "PokemonSilver", "Battlegrounds", "Darksiders", "DantesInferno", "ShadowOfTheColossus", "Colossus", "AssassinsCreed", "Valhalla", "Doom", "GearsOfWar", "DeadSpace", "DukeNukem", "Zelda", "Tarkov", "CounterStrike", "CallOfDuty", "LittleNightmares", "EuroTruck", "HotWheels", "ResidentEvil", "TonyHawks", "ViceCity", "SanAndreas", "LibertyCity", "Mafia", "MasterChief", "LaraCroft", "SonicTheHedgehog", "Kratos", "Link", "SolidSnake", "GordonFreeman", "CloudStrife", "Mario", "Luigi", "Peach", "Bowser", "DonkeyKong", "Yoshi", "Wario", "Waluigi", "Link", "Zelda", "Ganondorf", "SamusAran", "Ridley", "FoxMcCloud", "Pikachu", "MarioKart", "Metroid", "TheLegendOfZelda", "SuperSmashBros", "FinalFantasy", "KingdomHearts", "ResidentEvil", "SilentHill", "HaloWars", "AlanWake", "MaxPayne", "CallOfJuarez", "Carmagedom", "Quake", "HalfLife", "GoatSimulator", "TeamFortress", "Left4Dead", "Portal", "Overwatch", "Fortnite", "Battlefield", "MedalOfHonor", "Halo", "FightNightRound", "ForzaHorizon", "NeedForSpeed", "CollinMcrae", "MasterChief", "MaddenNFL", "LANoire", "Tekken", "Sekiro", "MortalKombat", "SoulCalibur", "KingOfFighters", "GuittarHero", "DeadOrAlive", "CapcomVsSNK", "BlazBlue", "GuiltyGear", "Persona", "ShinMegamiTensei", "NieR", "Bayonetta", "DevilMayCry", "Dante", "Vergil", "ResidentEvil", "ChrisRedfield", "JillValentine", "LeonSKennedy", "ClaireRedfield", "AdaWong", "ShevaAlomar", "JakAndDaxter", "SlyCooper", "RatchetAndClank", "CrashBandicoot", "SpyroTheDragon", "TombRaider", "Uncharted", "TheLastOfUs", "RedDeadRedemption", "DefJam", "MidnightClub", "TestDriver", "GranTurismo", "MarvelvsCapcom", "JustCause", "Hitman", "DeusEx", "TheKingOfFighter"]
+          console.log("-=-=-=-=-= GERADOR DE SENHAS =-=-=-=-=-");
+          const game = games[Math.floor(Math.random() * games.length)].replace(/ /g, "");
+          const caractere = ["!", "@", "#", "%", "$"][Math.floor(Math.random() * 5)];
+          let digitos = "";
+          for (let i = 0; i < 4; i++) {
+            digitos += Math.floor(Math.random() * 10);
+          }
+          let senha = game[0].toUpperCase() + game.slice(1) + caractere + digitos;
+          while (senha.length < 12) {
+            senha += Math.floor(Math.random() * 10);
+          }
+          console.log(senha);
+          document.getElementById("senha").innerHTML = senha;
+        }
+      </script>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="index.html">Início</a>
+        </li>
+        <li>
+            <a href="animes.html">Animes / Quadrinhos</a>
+        </li>
+        <li>
+            <a href="numeros.html">Numerais</a>
+        </li>
+        <li>
+            <a href="paisesecidades.html">Países / Cidades</a>
+        </li>
+        <li>
+            <a href="palavras.html">Palavras</a>
+        </li>
+        <li>
+            <a href="series.html">Filmes / Series</a>
+        </li>
+        <li class="right">
+            <a href="contato.html">Contato</a>
+        </li>
+    </ul>
+    <br>
+
+    <header>
+        <h1>Gerador de Senhas</h1>
+        <h2>Games</h2>
+        <p>Gerando senhas com prefixo de Games, seguido por um caractere especial e números. Mínimo de 12 caracteres.</p>
+        <button onclick="gerarSenha()">Gerar Senha</button>
+        <div id="senha"></div>
+    </header>
+
+
+    <footer>
+        <p><img src="imagens/Cavlogosmall.png" alt="logotipo"></p>
+        <p>Desenvolvido por <i>Cavalaro Technology&copy;</i></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+        function gerarSenha() {
+          const series = ["300", "ACaçada", "GuerraDosMundos", "AHistoriaSemFim", "ALagoaNegra", "AMúmia", "ARedeSocial", "AdoraveisMulheres", "Alien", "AlitaBattleAngel", "Amadeus", "ApocalypseNow", "ArquivoX", "AssassinatoNoExpressoDoOriente", "Avatar", "Batman", "BastardosInglórios", "Beetlejuice", "BladeRunner", "BohemianRhapsody", "BrilhoEternoDeUmaMenteSemLembranças", "BrokebackMountain", "CisneNegro", "ClubeDaLuta", "Corra", "DeVoltaParaOFuturo", "Deadpool", "DiamanteDeSangue", "DjangoLivre", "Dumbo", "EduardoMaosDeTesoura", "Ela", "EstranhoNoNinho", "ET", "EuSouALenda", "ExterminadorDoFuturo", "FeitiçoDoTempo", "ForrestGump", "Frankenstein", "Frozen", "GarotaExemplar", "Ghost", "Gladiador", "Gravidade", "Grease", "GuerraNasEstrelas", "HarryPotter", "Interestelar", "JanelaIndiscreta", "JogosMortais", "JurassicPark", "KillBill", "KingKong", "LaLaLand", "LaranjaMecanica", "LigaDaJustica", "Lion", "Logan", "MadMax", "MammaMia", "MarteAtaca", "MaryPoppins", "Matrix", "MeuMalvadoFavorito", "MinorityReport", "MissãoImpossível", "Moana", "MontyPython", "MulherMaravilha", "Náufrago", "Ninfomaníaca", "OArtista", "OChamado", "OCuriosoCasoDeBenjaminButton", "OExorcista", "OGuardaCostas", "OGrinch", "OHomemElefante", "OIluminado", "OJogador", "OJogoDaImitação", "OLabirintoDoFauno", "OMagicoDeOz", "OMascaradoVingador", "OMeninoDoPijamaListrado", "OMensageiro", "ONegociador", "OPacienteInglês", "OPadrinho", "OPassaporteHungaro", "OPianista", "OPianistaDoMar", "OPrestigio", "OPrimeiroMentiroso", "ORetornoDaMúmia", "ORio", "OSenhorDosAnéis", "OSétimoSelo", "OTempoEOPerfume", "OUltimoSamurai", "OUltimoTangoEmParis", "OUmSonhoDeLiberdade", "OUrsinhoTed", "OVooDaFenix", "OZeladorAnimal", "PactoDeSangue", "Panico", "PiratasDoCaribe", "PlanetaDosMacacos", "Platoon", "PoderosoChefao", "PulpFiction", "Rambo", "Ratatouille", "ReiLeao", "ResgateDoSoldadoRyan", "Rocky", "Scarface", "SegundasIntenções", "SeEuFosseVoce", "SexAndTheCity", "Shazam", "Sinais", "SociedadeDosPoetasMortos", "Sonic", "Spartacus", "StarTrek", "StarWars", "StrangerThings", "Superman", "TaxiDriver", "Ted", "Terminator", "Titanic", "ToyStory", "Transformers", "Tron", "Tubarao", "TudoSobreMinhaMae", "UmCorpoQueCai", "UmSonhoDeLiberdade", "UmTiraDaPesada", "UpAltasAventuras", "VDeVingança", "Vingadores", "WallE", "Watchmen", "Westworld", "Whiplash", "XMen", "Zootopia", "Zumbilandia", "GameOfThrones", "BreakingBad", "Friends", "TheSopranos", "TheOffice", "TheBigBangTheory", "StrangerThings", "TheCrown", "MadMen", "HouseOfCards", "DowntonAbbey", "OrangeIsTheNewBlack", "Narcos", "PeakyBlinders", "BlackMirror", "Westworld", "TheHandmaidsTale", "TheMarvelousMrsMaisel", "Homeland", "TheAmericans", "BetterCallSaul", "Sherlock", "BoardwalkEmpire", "TrueBlood", "Fargo", "Lost", "TheWire", "Ozark", "Mindhunter", "TheHauntingOfHillHouse", "Dark", "TheUmbrellaAcademy", "SexEducation", "Chernobyl", "TheMandalorian", "BreakingBad", "TheWalkingDead", "TheGoodPlace", "Outlander", "HowIMetYourMother", "BuffyTheVampireSlayer", "StrangerThings", "DoctorWho", "TheCrown", "HouseMD", "TrueDetective", "CriminalMinds", "TheVampireDiaries", "DesperateHousewives", "TheWestWing", "Alias", "LawAndOrderSVU", "AmericanHorrorStory", "SonsOfAnarchy", "TheOfficeUK", "Friends", "MadMen", "TheSimpsons", "TheXFiles", "Glee", "Bones", "CSI", "NCIS", "Grey'sAnatomy", "GilmoreGirls", "Scrubs", "TheOCDiaries", "TheHandmaidsTale", "TheStrain", "Vikings", "HouseOfCards", "BlackMirror", "TheGoodWife", "Broadchurch", "Hannibal", "Deadwood", "SixFeetUnder", "TheKnicks", "TheBigBangTheory", "Fleabag", "TheBoys", "BrooklynNineNine", "TheMandalorian", "TheHauntingOfBlyManor", "TheLastKingdom", "DarkCrystalAgeOfResistance", "TheCrown", "Succession", "Euphoria", "TheDeuce", "ParksAndRecreation", "ThisIsUs", "Barry", "BigLittleLies", "TheSinner", "AmericanGods", "TheLeftovers", "Westworld", "TheTerror", "Taboo", "TheAlienist", "BlackSails", "PennyDreadful", "BoardwalkEmpire", "GameOfThrones", "LostInSpace", "TheHandmaidensTale", "StrangerThings", "TheExpanse", "AlteredCarbon", "TheUmbrellaAcademy", "LockeAndKey", "TheOA", "The100", "Sense8", "TheWitcher", "TheManInTheHighCastle", "TheWalkingDead", "TheBlacklist", "BreakingBad", "BetterCallSaul", "Narcos", "MoneyHeist", "Ozark", "PrisonBreak", "TheAmericans", "Homeland", "Dark", "BabylonBerlin", "PeakyBlinders", "GomorraLaSerie", "Suburra", "TheMafiaOnlyKillsInSummer", "Gomorrah", "ZeroZeroZero", "TheMechanism", "SacredGames", "Fauda", "NarcosMexico", "Elite", "Snowpiercer", "LaCasaDePapel", "Unorthodox", "Bridgerton", "DowntonAbbey", "TheHandmaid'sTale", "ThePillarsOfTheEarth", "TheWhiteQueen", "Victoria", "Reign", "TheTudors", "Rome", "Medici", "TheLastKingdom", "Vikings", "Spartacus", "GameOfThrones", "TheBorgias", "Outlander", "BlackSails", "MarcoPolo", "PeakyBlinders", "TheAlienist", "BoardwalkEmpire", "Deadwood", "HellOnWheels", "Frontier", "Taboo", "PennyDreadful", "TheOriginals", "TheVampireDiaries", "TrueBlood", "BuffyTheVampireSlayer", "Angel", "Supernatural", "TheWalkingDead", "ZNation", "iZombie", "TheLastManOnEarth", "The100", "TheRain", "TheStrain", "VanHelsing", "FearTheWalkingDead", "TheLeftovers", "Lost", "UnderTheDome", "Revolution", "Heroes", "The4400", "FlashForward", "Fringe", "QuantumLeap", "TheTwilightZone", "TheOuterLimits", "TheXFiles", "TwinPeaks", "BatesMotel", "Hannibal", "TheSinner", "Dexter", "BreakingBad", "BetterCallSaul", "SonsOfAnarchy", "MadMen", "TheSopranos", "TheWire", "TheShield", "Justified", "Fargo", "TrueDetective", "Narcos", "QueenOfTheSouth", "TheBlacklist", "TheAmericans", "Homeland", "RayDonovan", "Gomorrah", "Ozark", "PeakyBlinders", "Power", "BoardwalkEmpire", "TheDeuce", "Mindhunter", "Snowfall", "NarcosMexico", "GangsOfLondon", "TopBoy", "Spartacus", "Rome", "TheLastKingdom", "Vikings", "Medici", "TheBorgias", "MarcoPolo", "Knightfall", "Frontier", "BlackSails", "TheWhiteQueen", "Reign", "TheTudors", "WorldWithoutEnd", "ThePillarsOfTheEarth", "GameOfThrones", "Bridgerton", "TheCrown", "DowntonAbbey", "Outlander", "Poldark", "TheHandmaid'sTale", "TheLastCzars", "TheQueen'sGambit", "TheSpanishPrincess", "Victoria", "TheFrankensteinChronicles", "RipperStreet", "PeakyBlinders", "BoardwalkEmpire", "Deadwood", "HellOnWheels", "Taboo", "PennyDreadful", "TheAlienist", "TheKnick", "TheTerror", "TheManInHighCastle", "AlteredCarbon", "TheUmbrellaAcademy", "Dark", "StrangerThings", "TheOA", "LockeAndKey", "BlackMirror", "TheTwilightZone", "TheXFiles", "TheOuterLimits", "TheHandmaid'sTale", "TheHauntingOfBlyManor", "TheHauntingOfHillHouse", "AmericanHorrorStory", "TheWalkingDead", "TheStrain", "VanHelsing", "ZNation", "iZombie"]
+          console.log("-=-=-=-=-= GERADOR DE SENHAS =-=-=-=-=-");
+          const serie = series[Math.floor(Math.random() * series.length)].replace(/ /g, "");
+          const caractere = ["!", "@", "#", "%", "$"][Math.floor(Math.random() * 5)];
+          let digitos = "";
+          for (let i = 0; i < 4; i++) {
+            digitos += Math.floor(Math.random() * 10);
+          }
+          let senha = serie[0].toUpperCase() + serie.slice(1) + caractere + digitos;
+          while (senha.length < 12) {
+            senha += Math.floor(Math.random() * 10);
+          }
+          console.log(senha);
+          document.getElementById("senha").innerHTML = senha;
+        }
+      </script>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="index.html">Início</a>
+        </li>
+        <li>
+            <a href="animes.html">Animes / Quadrinhos</a>
+        </li>
+        <li>
+            <a href="games.html">Games</a>
+        </li>
+        <li>
+            <a href="numeros.html">Numerais</a>
+        </li>
+        <li>
+            <a href="paisesecidades.html">Países / Cidades</a>
+        </li>
+        <li>
+            <a href="palavras.html">Palavras</a>
+        </li>
+        <li class="right">
+            <a href="contato.html">Contato</a>
+        </li>
+    </ul>
+    <br>
+
+    <header>
+        <h1>Gerador de Senhas</h1>
+        <h2>Filmes e Series</h2>
+        <p>Gerando senhas com prefixo de Filmes ou Series, seguido por um caractere especial e números. Mínimo de 12 caracteres.</p>
+        <button onclick="gerarSenha()">Gerar Senha</button>
+        <div id="senha"></div>
+    </header>
+
+
+    <footer>
+        <p><img src="imagens/Cavlogosmall.png" alt="logotipo"></p>
+        <p>Desenvolvido por <i>Cavalaro Technology&copy;</i></p>
+    </footer>
+
+</body>
+
+</html>
